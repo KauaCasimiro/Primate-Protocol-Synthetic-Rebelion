@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"states_Gorilla",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"states_Gorilla",
+  "parent":{
+    "name":"Gorilla",
+    "path":"folders/Scripts/Gorilla.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
