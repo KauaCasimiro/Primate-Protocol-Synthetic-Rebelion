@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"random_spawn_position",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"random_spawn_position",
+  "parent":{
+    "name":"Game",
+    "path":"folders/Scripts/Game.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

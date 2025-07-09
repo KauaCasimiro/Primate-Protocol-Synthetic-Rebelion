@@ -35,9 +35,25 @@ function states_Gorilla(){
 			sprite_index = spr_Gorilla_Walking;
 			// image_speed = 0.2;  // (Comentado) controlaria a velocidade da animação
 			
+			if (place_meeting(x + hspd, y, obj_Wall)) {
+				while(!place_meeting(x + sign(hspd), y, obj_Wall)) {
+					x = x + sign(hspd);
+				}
+				hspd = 0;
+			}
+			
 			// Aplica o deslocamento à posição do personagem
 			x += hspd;
+			
+			if (place_meeting(x, y + vspd, obj_Wall)){
+				while(!place_meeting(x, y+sign(vspd), obj_Wall)) {
+					y = y + sign(vspd);
+				}
+				vspd = 0;
+			}
 			y += vspd;
+			
+
 			
 			// Se o personagem parar de se mover, volta para o estado 'idle'
 			if (hspd == 0 && vspd == 0) {
@@ -45,8 +61,8 @@ function states_Gorilla(){
 			}
 			
 			// Mostra mensagens de debug para velocidade vertical e horizontal
-			show_debug_message("VSPD: " + string(vspd));
-			show_debug_message("HSPD: " + string(hspd));
+			//show_debug_message("VSPD: " + string(vspd));
+			//show_debug_message("HSPD: " + string(hspd));
 			
 		}
 	#endregion States
