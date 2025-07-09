@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"shoot_Bullet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shoot_Bullet",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/Scripts/Enemies.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
