@@ -1,3 +1,5 @@
+image_angle = direction;
+
 life_time -= 1;
 
 if (life_time <= 0) {

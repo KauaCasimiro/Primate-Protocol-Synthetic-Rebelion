@@ -1,7 +1,7 @@
 vspd = 0;
 hspd = 0;
 dir = 0;
-velocity = 2;
+velocity = 4;
 state = "idle";
 can_shoot = true;
 shoot_cooldown = 15;

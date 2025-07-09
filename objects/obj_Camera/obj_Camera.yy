@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Security",
+  "%Name":"obj_Camera",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Security",
+  "name":"obj_Camera",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objetos/Enemies.yy",
+    "name":"Game",
+    "path":"folders/Objetos/Game.yy",
   },
-  "parentObjectId":{
-    "name":"obj_Enemie",
-    "path":"objects/obj_Enemie/obj_Enemie.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_Security",
-    "path":"sprites/spr_Security/spr_Security.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
