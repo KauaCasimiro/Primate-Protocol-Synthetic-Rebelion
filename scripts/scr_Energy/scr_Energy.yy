@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Energy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Energy",
+  "parent":{
+    "name":"Gorilla",
+    "path":"folders/Scripts/Gorilla.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
