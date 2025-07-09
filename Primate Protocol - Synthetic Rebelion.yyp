@@ -58,6 +58,7 @@
     {"id":{"name":"game_Functions","path":"scripts/game_Functions/game_Functions.yy",},},
     {"id":{"name":"generate_Wave","path":"scripts/generate_Wave/generate_Wave.yy",},},
     {"id":{"name":"random_spawn_position","path":"scripts/random_spawn_position/random_spawn_position.yy",},},
+    {"id":{"name":"shoot_Bullet","path":"scripts/shoot_Bullet/shoot_Bullet.yy",},},
     {"id":{"name":"shoot_Laser","path":"scripts/shoot_Laser/shoot_Laser.yy",},},
     {"id":{"name":"states_Enemies","path":"scripts/states_Enemies/states_Enemies.yy",},},
     {"id":{"name":"states_Gorilla","path":"scripts/states_Gorilla/states_Gorilla.yy",},},

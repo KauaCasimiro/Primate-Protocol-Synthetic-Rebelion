@@ -65,6 +65,26 @@ function states_Gorilla(){
 			//show_debug_message("HSPD: " + string(hspd));
 			
 		}
+		
+		function stunned() {
+			if (is_stunned) {
+				stun_timer -= 1;
+				var stun_total_time = 45;
+				stun_effect_intensity = stun_timer/stun_total_time;
+				
+					if (stun_timer <= 0) {
+						is_stunned = false
+						stun_effect_intensity = 0;
+						state = "idle";
+					}
+
+				// Interrompe inputs
+				hspd = 0;
+				vspd = 0;
+				exit; // cancela o restante do step para congelar o jogador
+
+			}
+		}
 	#endregion States
 	
 	#region state_Machine
@@ -77,6 +97,19 @@ function states_Gorilla(){
 			case "walking":
 				walking();
 				break;
+			case "stunned":
+				stunned();
+				break;
 		}
 	#endregion state_Machine
+	
+		if (is_stunned) {
+					var t = 1 - stun_effect_intensity;
+					var r = lerp(0, 255, t);
+					var g = 255;
+					var b = 255;
+					image_blend = make_color_rgb(r, g, b);
+				} else {
+					image_blend = c_white;
+				}
 }
