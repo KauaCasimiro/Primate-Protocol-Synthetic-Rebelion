@@ -46,3 +46,9 @@ draw_set_color(c_blue);
 draw_text(xpos, ypos, wave_text);
 draw_text(xpos, ypos + spacing, enemy_text);
 draw_text(xpos, ypos + spacing * 2, time_text);
+
+if (sprite_exists(cursor_sprite)) {
+    var mx = window_mouse_get_x();
+    var my = window_mouse_get_y();
+    draw_sprite(cursor_sprite, 0, mx, my);
+}

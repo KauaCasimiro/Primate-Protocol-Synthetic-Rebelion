@@ -1,22 +1,27 @@
 function shoot_Laser() {
-    // Ponto da cruz vermelha na testa
-    var px = x + 20.5;
-    var py = y + 12.5;
+    // Ponto de origem do disparo: testa do gorila (16px acima da origem central)
+    var px;
+    if (image_xscale > 0) {
+        px = x + 16;
+    } else {
+        px = x - 16;
+    }
+    var py = y - 16;
 
-    // Cursor
-    var mx = device_mouse_x_to_gui(0);
-    var my = device_mouse_y_to_gui(0);
+    // Posição real do mouse no mundo da câmera
+    var mx = camera_get_view_x(view_camera[0]) + window_mouse_get_x();
+    var my = camera_get_view_y(view_camera[0]) + window_mouse_get_y();
 
-    // Ângulo do tiro
+    // Direção do disparo a partir do ponto de origem (px, py) até o mouse
     var angle = point_direction(px, py, mx, my);
 
-    // Desloca o spawn do projétil um pouco pra frente da testa
-    var offset = 4;
-    px += lengthdir_x(offset, angle);
-    py += lengthdir_y(offset, angle);
+    // Offset para spawnar o projétil um pouco à frente da testa
+    var offset = 6;
+    var spawn_x = px + lengthdir_x(offset, angle);
+    var spawn_y = py + lengthdir_y(offset, angle);
 
-    // Cria projétil
-    var laser = instance_create_layer(px, py, "Instances", obj_LaserGorilla);
+    // Cria o projétil com direção e velocidade
+    var laser = instance_create_layer(spawn_x, spawn_y, "Instances", obj_LaserGorilla);
     laser.direction = angle;
     laser.speed = 12;
 }
