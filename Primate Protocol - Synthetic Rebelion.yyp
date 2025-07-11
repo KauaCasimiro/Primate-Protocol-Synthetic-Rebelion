@@ -69,6 +69,7 @@
     {"id":{"name":"states_Gorilla","path":"scripts/states_Gorilla/states_Gorilla.yy",},},
     {"id":{"name":"spr_Background","path":"sprites/spr_Background/spr_Background.yy",},},
     {"id":{"name":"spr_Cleaner","path":"sprites/spr_Cleaner/spr_Cleaner.yy",},},
+    {"id":{"name":"spr_Cursor","path":"sprites/spr_Cursor/spr_Cursor.yy",},},
     {"id":{"name":"spr_Drone","path":"sprites/spr_Drone/spr_Drone.yy",},},
     {"id":{"name":"spr_Gorilla_Walking","path":"sprites/spr_Gorilla_Walking/spr_Gorilla_Walking.yy",},},
     {"id":{"name":"spr_Gorilla","path":"sprites/spr_Gorilla/spr_Gorilla.yy",},},
