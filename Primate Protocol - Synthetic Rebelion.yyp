@@ -44,6 +44,7 @@
   },
   "name":"Primate Protocol - Synthetic Rebelion",
   "resources":[
+    {"id":{"name":"fnt_cybr","path":"fonts/fnt_cybr/fnt_cybr.yy",},},
     {"id":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},},
     {"id":{"name":"obj_Cleaner","path":"objects/obj_Cleaner/obj_Cleaner.yy",},},
     {"id":{"name":"obj_Drone","path":"objects/obj_Drone/obj_Drone.yy",},},
@@ -59,6 +60,7 @@
     {"id":{"name":"game_Functions","path":"scripts/game_Functions/game_Functions.yy",},},
     {"id":{"name":"generate_Wave","path":"scripts/generate_Wave/generate_Wave.yy",},},
     {"id":{"name":"random_spawn_position","path":"scripts/random_spawn_position/random_spawn_position.yy",},},
+    {"id":{"name":"scr_end_stats","path":"scripts/scr_end_stats/scr_end_stats.yy",},},
     {"id":{"name":"scr_Energy","path":"scripts/scr_Energy/scr_Energy.yy",},},
     {"id":{"name":"scr_Hp","path":"scripts/scr_Hp/scr_Hp.yy",},},
     {"id":{"name":"shoot_Bullet","path":"scripts/shoot_Bullet/shoot_Bullet.yy",},},
