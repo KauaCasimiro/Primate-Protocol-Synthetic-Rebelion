@@ -18,5 +18,5 @@ else {
 
 draw_self();
 draw_set_color(c_white);
-draw_circle(x - (16	* image_xscale), y - 16, 2, false); // testa
+//draw_circle(x - (16	* image_xscale), y - 16, 2, false); // testa
 
