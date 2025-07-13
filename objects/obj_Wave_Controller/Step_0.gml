@@ -83,11 +83,11 @@ switch(state) {
 	        var efficiency = (time_taken > 0) ? (enemies / time_taken) : 0;
 
 	        var grade;
-	        if (efficiency >= 3) grade = "S";
-	        else if (efficiency >= 2) grade = "A";
-	        else if (efficiency >= 1) grade = "B";
-	        else if (efficiency >= 0.5) grade = "C";
-	        else if (efficiency >= 0.25) grade = "D";
+	        if (efficiency >= 1.5) grade = "S";
+	        else if (efficiency >= 1.2) grade = "A";
+	        else if (efficiency >= 0.9) grade = "B";
+	        else if (efficiency >= 0.6) grade = "C";
+	        else if (efficiency >= 0.3) grade = "D";
 	        else grade = "F";
 
 	        // Cria o registro da wave

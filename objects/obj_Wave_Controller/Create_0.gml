@@ -8,3 +8,4 @@ wait_timer = 0;
 
 stats_wave = [];
 enemies_killed_this_wave = 0;
+
