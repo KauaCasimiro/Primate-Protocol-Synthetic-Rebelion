@@ -40,7 +40,7 @@ var spacing = 25;
 
 draw_set_halign(fa_right);
 draw_set_valign(fa_top);
-draw_set_color(c_blue);
+draw_set_color(c_orange);
 //draw_set_font(-1);
 
 draw_text(xpos, ypos, wave_text);
