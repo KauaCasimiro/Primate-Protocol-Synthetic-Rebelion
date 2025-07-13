@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_cybr",
+  "%Name":"fnt_cybr_Size",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":13,
@@ -116,7 +116,7 @@
   "last":0,
   "lineHeight":17,
   "maintainGms1Font":false,
-  "name":"fnt_cybr",
+  "name":"fnt_cybr_Size",
   "parent":{
     "name":"Fontes",
     "path":"folders/Fontes.yy",
@@ -133,7 +133,10 @@
   "sdfSpread":8,
   "size":12.0,
   "styleName":"Regular",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }
