@@ -24,14 +24,14 @@ function scr_Hp(_hp_Max) constructor{
 		var w_Hp = (hp_Temp/hp_Max) * _width;
 		var w_Hp_Bg = (hp_Bg/hp_Max) * _width 
 		
-		var _color = merge_color(c_red, c_green, hp_Temp/hp_Max);
+		var _color = merge_color(c_red, c_lime, hp_Temp/hp_Max);
 		
 		// Diminuir o valor atual de vida
 		hp_Temp = lerp(hp_Temp, hp, 0.1);
 		hp_Bg = lerp(hp_Bg, hp_Temp, 0.03);
 		
 		// fundo da barra de vida
-		draw_rectangle_color(_x - 2, _y - 2, _x + _width + 2, _y + _height + 2, c_yellow,c_yellow,c_yellow,c_yellow, false);
+		draw_rectangle_color(_x - 2, _y - 2, _x + _width + 2, _y + _height + 2, c_navy,c_navy,c_navy,c_navy, false);
 		
 		// Efeito de perder vida
 		draw_rectangle_color(_x, _y, _x + w_Hp_Bg, _y + _height, c_red, c_red, c_red, c_red, false);
