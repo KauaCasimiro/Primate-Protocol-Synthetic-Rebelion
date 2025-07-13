@@ -19,4 +19,6 @@ function shoot_Laser() {
     var laser = instance_create_layer(x, y, "Instances", obj_LaserGorilla);
     laser.direction = angle;
     laser.speed = 12;
+	
+	audio_play_sound(snd_LaserGorilla,1,false);
 }

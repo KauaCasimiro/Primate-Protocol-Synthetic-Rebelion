@@ -14,4 +14,6 @@ function shoot_Bullet(){
 	laser.image_angle = angle;
 	laser.speed = 8;
 	
+	audio_play_sound(snd_LaserRobot, 1, false);
+	
 }
