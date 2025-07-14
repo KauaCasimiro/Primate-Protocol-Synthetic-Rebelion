@@ -3,7 +3,7 @@ draw_set_font(fnt_cybr);
 for (var i = 0; i < array_length(menu); i++) {
 	
 	var _color = c_white;
-	var _height = string_height("I") * 1.5
+	var _height = string_height("I") * 3.5
 	var _size = fnt_cybr;
 	
 	if (i == current) {

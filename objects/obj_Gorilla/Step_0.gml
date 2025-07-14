@@ -31,5 +31,5 @@ energy_Gerency.gain_Energy(0.2);
 if (hp_Gerency.hp <= 0) {
     show_message("Você morreu.");
     scr_end_stats();
-	game_end();
+	room_goto(End);
 }
