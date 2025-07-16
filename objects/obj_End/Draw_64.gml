@@ -35,9 +35,9 @@ var x_worst = 450;
 var __y = 200;
 
 // 📦 Fundo de contraste (sem preenchimento total, estilo caixa de HUD)
-draw_set_alpha(0.5);
+draw_set_alpha(0.8);
 draw_set_color(c_black);
-draw_rectangle(x_best - 20, __y - 20, x_worst + 250, y + 120, false); // borda total
+draw_rectangle(x_best - 20, __y - 20, x_worst + 250, y + 125, false); // borda total
 draw_set_alpha(1);
 
 // 🎨 Configurações de texto
