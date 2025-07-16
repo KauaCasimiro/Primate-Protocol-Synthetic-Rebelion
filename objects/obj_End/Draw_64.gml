@@ -12,18 +12,22 @@ if (is_undefined(best) || is_undefined(worst)) {
 
 // 🧾 Formatando blocos
 var msg_best =
-    "MELHOR WAVE:\n" +
+    "BEST WAVE:\n" +
     "- Wave: " + string(best.wave) + "\n" +
-    "- Inimigos Eliminados: " + string(best.enemies_killed) + "\n" +
-    "- Tempo: " + string_format(best.time, 1, 2) + "s\n" +
-    "- Nota: " + best.grade;
+    "- Enemies Killed: " + string(best.enemies_killed) + "\n" +
+    "- Time: " + string_format(best.time, 1, 2) + "\n" +
+    "- Accuracy: " + string_format(best.accuracy * 100, 1,2) + "%\n" +
+    "- Max Combo: " + string(best.max_combo) + "\n" +
+    "- Grade: " + best.grade;
 
 var msg_worst =
-    "PIOR WAVE:\n" +
+    "WORST WAVE:\n" +
     "- Wave: " + string(worst.wave) + "\n" +
-    "- Inimigos Eliminados: " + string(worst.enemies_killed) + "\n" +
-    "- Tempo: " + string_format(worst.time, 1, 2) + "s\n" +
-    "- Nota: " + worst.grade;
+    "- Enemies Killed: " + string(worst.enemies_killed) + "\n" +
+    "- Time: " + string_format(worst.time, 1, 2) + "\n" +
+    "- Accuracy: " + string_format(worst.accuracy * 100, 1,2) + "%\n" +
+    "- Max Combo: " + string(worst.max_combo) + "\n" +
+    "- Grade: " + worst.grade;
 
 // 🎯 Posições de texto
 var x_best = 100;

@@ -23,3 +23,12 @@ energy_Gerency = new scr_Energy(energy_Max);
 
 damage_effect_timer = 0;
 damage_effect_duration = 15;
+
+global.total_shots = 0;
+global.hits = 0;
+global.current_combo = 0;
+global.max_combo = 0;
+
+global.last_shot_time = 0;
+global.shot_intervals = [];
+
