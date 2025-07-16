@@ -17,7 +17,7 @@ function scr_Energy(_energy_Max) constructor{
 		return energy;
 	}
 	
-	static gain_Energy = function(_qtd = 0.2) {
+	static gain_Energy = function(_qtd = 1) {
 		energy += _qtd;
 		energy = clamp(energy, 0, energy_Max);
 		return energy;
