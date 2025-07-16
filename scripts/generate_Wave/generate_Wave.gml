@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function generate_Wave(w){
 	 // Debug do valor recebido
-    show_debug_message("Generating wave: " + string(w));
+    //show_debug_message("Generating wave: " + string(w));
 
     var base = 5;
     var total = base + (w - 1) * 2;
@@ -49,9 +49,9 @@ function generate_Wave(w){
         array_push(spawn_list, {obj: obj_Drone, x: pos.x, y: pos.y});
     }
 
-    show_debug_message("🛠️ Wave " + string(w) + " gerada:");
-    show_debug_message("Cleaners: " + string(cleaners));
-    show_debug_message("Securitys: " + string(securitys));
-    show_debug_message("Drones: " + string(drones));
-    show_debug_message("Total: " + string(array_length(spawn_list)));
+    //show_debug_message("🛠️ Wave " + string(w) + " gerada:");
+    //show_debug_message("Cleaners: " + string(cleaners));
+    //show_debug_message("Securitys: " + string(securitys));
+    //show_debug_message("Drones: " + string(drones));
+    //show_debug_message("Total: " + string(array_length(spawn_list)));
 }

@@ -61,8 +61,8 @@ function states_Gorilla(){
 			}
 			
 			// Mostra mensagens de debug para velocidade vertical e horizontal
-			//show_debug_message("VSPD: " + string(vspd));
-			//show_debug_message("HSPD: " + string(hspd));
+			////show_debug_message("VSPD: " + string(vspd));
+			////show_debug_message("HSPD: " + string(hspd));
 			
 		}
 		

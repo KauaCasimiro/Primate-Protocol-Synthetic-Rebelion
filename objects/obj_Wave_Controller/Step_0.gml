@@ -23,7 +23,7 @@ if (keyboard_check(vk_alt)) {
         wave = new_wave;
         state = "setup";
 
-        show_debug_message("🧪 CHEAT ATIVADO: pulando direto para a Wave " + string(wave));
+        //show_debug_message("🧪 CHEAT ATIVADO: pulando direto para a Wave " + string(wave));
     }
 }
 
@@ -51,7 +51,7 @@ if (wave_ativa) {
 
 switch(state) {
     case "setup":
-        show_debug_message("🌀 Iniciando Wave " + string(wave));
+        ////show_debug_message("🌀 Iniciando Wave " + string(wave));
 
         // Garante que o array tem espaço para a wave atual
         if (array_length(wave_times) <= (wave - 1)) {
@@ -83,18 +83,18 @@ switch(state) {
             if (spawn_timer <= 0) {
                 var enemy = array_pop(spawn_list);
                 instance_create_layer(enemy.x, enemy.y, "Instances", enemy.obj);
-                show_debug_message("👾 Spawnando: " + string(enemy.obj));
+                ////show_debug_message("👾 Spawnando: " + string(enemy.obj));
 				
 				if (!wave_ativa) {
 					wave_times[wave - 1] = 0;
 					wave_ativa = true;
-					show_debug_message("⏱️ Timer da Wave " + string(wave) + " iniciado.");
+					//("⏱️ Timer da Wave " + string(wave) + " iniciado.");
 				}
 				
                 spawn_timer = (array_length(spawn_list) > 15) ? 5 : 10;
             }
         } else {
-            show_debug_message("✅ Todos inimigos da wave " + string(wave) + " foram spawnados.");
+            ////show_debug_message("✅ Todos inimigos da wave " + string(wave) + " foram spawnados.");
             // Não para a contagem aqui para contar enquanto o player luta
             state = "waiting";
         }
@@ -139,12 +139,12 @@ switch(state) {
 			// Salva no array
 			array_push(stats_wave, wave_data);
 
-        show_debug_message("Wave " + string(wave) + " salva: " +
+        /*show_debug_message("Wave " + string(wave) + " salva: " +
             "Enemies=" + string(enemies) + ", Time=" + string_format(time_taken, 1, 2) +
-            ", Grade=" + grade);
+            ", Grade=" + grade);*/
 
 			
-            show_debug_message("☠️ Todos inimigos eliminados. Preparando próxima wave...");
+            //show_debug_message("☠️ Todos inimigos eliminados. Preparando próxima wave...");
             state = "next_wave";
             wait_timer = 60;
         }
@@ -153,7 +153,7 @@ switch(state) {
     case "next_wave":
         wait_timer--;
         if (wait_timer == 30) {
-            show_debug_message("🔄 Próxima wave chegando...");
+            //show_debug_message("🔄 Próxima wave chegando...");
         }
         if (wait_timer <= 0) {
             wave++;

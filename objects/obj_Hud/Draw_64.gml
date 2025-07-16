@@ -8,7 +8,7 @@ if (wc != noone) {
     wave_times_local = wc.wave_times;
 } else {
     // Opcional: mensagem de debug para indicar que o objeto não está presente
-    // show_debug_message("obj_wave_control não encontrado na room!");
+    // //show_debug_message("obj_wave_control não encontrado na room!");
 }
 
 // Barra de vida e energia
