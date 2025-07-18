@@ -1,3 +1,35 @@
+if (hp_Gerency.hp <= 0 && !is_dead) {
+	is_dead = true;
+	flash_timer = 60;
+	freeze_timer = 60;
+	scr_end_stats();
+}
+
+if (is_dead) {
+	hspd = 0;
+	vspd = 0;
+	
+	// Impedir tiro
+	can_shoot = false;
+	shoot_timer = 0;
+
+	if (flash_timer > 0) {
+		flash_timer--;
+	} else {
+		image_blend = c_white;
+	}
+	
+	if (freeze_timer > 0) {
+		freeze_timer--;
+	} else {
+		audio_stop_sound(snd_Game);
+		audio_play_sound(snd_HitGorilla, 1, false);
+		instance_destroy();
+		room_goto(End);
+	}
+
+	exit; // Sai do step e impede qualquer lógica depois
+}
 states_Gorilla();
 
 if (damage_effect_timer > 0) {
@@ -37,9 +69,3 @@ energy_Gerency.gain_Energy(0.2);
 		}
 	}
 #endregion Tiro a laser
-
-if (hp_Gerency.hp <= 0) {
-    show_message("Você morreu.");
-    scr_end_stats();
-	room_goto(End);
-}

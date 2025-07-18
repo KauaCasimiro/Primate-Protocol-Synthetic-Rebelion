@@ -32,3 +32,7 @@ global.max_combo = 0;
 global.last_shot_time = 0;
 global.shot_intervals = [];
 
+is_dead = false;
+flash_timer = 0;      
+freeze_timer = 0;     
+

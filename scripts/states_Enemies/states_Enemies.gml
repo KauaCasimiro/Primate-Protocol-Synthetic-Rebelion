@@ -2,10 +2,12 @@ function states_Enemies(){
 	#region States
 		
 		function follow_Player(){
+			if (instance_exists(obj_Gorilla)) {
 			var angle = point_direction(x, y, obj_Gorilla.x, obj_Gorilla.y);
 			
 			x += lengthdir_x(spd, angle);
 			y += lengthdir_y(spd, angle);
+			}
 		}
 		
 	#endregion States

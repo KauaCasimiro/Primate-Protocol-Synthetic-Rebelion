@@ -1,4 +1,6 @@
 event_inherited();
+if (instance_exists(obj_Gorilla)) {
+
 
 var dist = point_distance(x, y, obj_Gorilla.x, obj_Gorilla.y); // distancia até o jogador
 
@@ -48,4 +50,5 @@ if (has_Seen_Player) {
 			shoot_Cooldown_Timer -= 1;
 		}
 	}
+}
 }
