@@ -1,7 +1,9 @@
 # 🧠💥 Primate Protocol: Synthetic Rebellion
 
-> A pixel art top-down shooter developed for a Game Jam with the theme **"Rebellion"**.  
-> Work in progress – built by a solo developer from the **Monkeys Dynamite** team.
+A pixel art top-down shooter developed for a Game Jam with the theme **"Rebellion"**.  
+Completed and released by a solo developer from the **Monkeys Dynamite** team.
+
+---
 
 ## 🎮 About the Game
 
@@ -11,6 +13,8 @@ Now, the zoo workers — infected and transformed into zombie-like machines — 
 
 You are a **cyborg primate**, a forgotten government project reactivated to contain the rebellion.  
 Fight through waves of enemies and survive.
+
+---
 
 ## 🐒 Characters
 
@@ -25,19 +29,14 @@ Fight through waves of enemies and survive.
 - 🚁 **Infected Supply Drone (Runner Enemy)**  
   Extremely fast, collides and explodes on contact.
 
-## 🛠️ Project Status
-
-- ✅ Core concept and narrative defined  
-- ✅ 32x32 sprites completed for all four main characters  
-- 🔄 Movement and animation system in development  
-- 🔜 Wave system and HUD  
-- 🔜 Original music and sound effects  
-- 🔜 Menu and game over screen  
+---
 
 ## 🎯 Target Platforms
 
 - 🖥️ PC (Windows)  
-- </> Web
+- </> Web (HTML5)
+
+---
 
 ## 🎨 Tech Stack
 
@@ -45,12 +44,31 @@ Fight through waves of enemies and survive.
 - Pixel art (32x32 format)  
 - Designed and coded by a solo dev during the jam
 
+---
+
 ## 🧪 Game Jam Info
 
-This game is being developed for a **Game Jam** with a deadline of **July 19th, 2025**.  
-Post-jam updates may be released with improvements and additional content.
+This game was developed for a **Game Jam** with the theme **"Rebellion"**.
+---
 
-## 📎 Links
+## 📦 Credits
+
+### 🔊 Sound Effects  
+- **Laser:** [dklon – Laser Fire](https://opengameart.org/content/laser-fire)  
+- **Explosions:** [Little Robot Sound Factory – 8-bit Sound Effects Library](https://opengameart.org/content/8-bit-sound-effects-library)
+
+### 🔤 Fonts  
+- **Revoinex:** [Dhabee Studio](https://www.1001fonts.com/revoinex-font.html)  
+- **Cyberbang:** [erifqizefont](https://www.fontspace.com/cyberbang-font-f110261)
+
+### 🛠️ Tools  
+- **GameMaker Studio** – Programming and game development  
+- **Piskel** – Pixel art and sprite creation
+- - **Beepbox** – Soundtrack
+
+---
+
+## 📎 Useful Links
 
 - 🔗 [Monkeys Dynamite Itch.io Page](https://monkeys-dynamite.itch.io)  
 - 📸 [Instagram @monkeysdynamite](https://www.instagram.com/monkeysdynamite/)
