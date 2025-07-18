@@ -36,6 +36,11 @@ mx = clamp(mx, 0, window_get_width() - 1);
 // limita my para ficar dentro da altura da janela (0 até window_get_height())
 my = clamp(my, 0, window_get_height() - 1);
 
+if (!audio_is_playing(snd_Game)) {
+    audio_play_sound(snd_Game, 1, true); // Loop = true
+}
+
+
 // se o mouse saiu da janela, posiciona de volta dentro
 if (device_mouse_x(0) != mx || device_mouse_y(0) != my) {
     window_mouse_set(mx, my);

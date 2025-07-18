@@ -16,3 +16,7 @@ option2 = {
 menu = [option1, option2];
 
 current = 0;
+
+if (!audio_is_playing(snd_Menu)) {
+    audio_play_sound(snd_Menu, 1, true); // toca com looping
+}
