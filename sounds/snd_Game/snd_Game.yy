@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":15.777959,
+  "duration":30.328163,
   "name":"snd_Game",
   "parent":{
     "name":"Sons",
